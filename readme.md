@@ -28,7 +28,7 @@ ___
 
 # Git
 
-- [Git 기초](.git/git.md)
+- [Git 기초](./git/git.md)
 
   
 
