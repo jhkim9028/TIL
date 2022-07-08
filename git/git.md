@@ -8,7 +8,7 @@
 
 ### init
 
-```
+```bash
 $ git init
 ```
 
@@ -18,7 +18,7 @@ $ git init
 
 ### add
 
-```
+```bash
 $ git add <파일명>
 ```
 
@@ -30,7 +30,7 @@ $ git add <파일명>
 
 ### commit
 
-```
+```bash
 $ git commit -m '<커밋메시지>'
 ```
 
@@ -40,11 +40,11 @@ $ git commit -m '<커밋메시지>'
 
 ### log
 
-```
+```bash
 $ git log
 ```
 
-```
+```bash
 $ git log -1
 $ git log --oneline
 $ git log -2 --oneline
@@ -56,7 +56,7 @@ $ git log -2 --oneline
 
 ### status
 
-```
+```bash
 $ git status
 ```
 
@@ -72,7 +72,7 @@ $ git status
 
 ### 사용자 설정
 
-```
+```bash
 $ git config --global user.name "username"
 
 $ git config --global user.email "my@email.com"

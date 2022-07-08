@@ -347,9 +347,9 @@ $ git branch -d feature/test
 
 
 
-___
 
-### Feature Branch Workflow
+
+## Feature Branch Workflow
 
 > shared repository model (저장소의 소유권이 있는 경우)
 
@@ -404,7 +404,7 @@ ___
 
 
 
-### Forking Workflow
+## Forking Workflow
 
 - Fork & Pull model (저장소의 소유권이 없는 경우)
 
@@ -454,20 +454,3 @@ $ git push origin example
 9. pull request 내용을 작성한 후 create pull request합니다.
    1. head repository와 base repository를 확인해야 합니다.
    2. head => base 방향으로 merge 됩니다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

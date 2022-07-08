@@ -6,13 +6,13 @@
 
 ## 원격 저장소(Remote Repository) 기본 흐름
 
-```
+```bash
 $ git push
 ```
 
 - 로컬 저장소의 버전을 원격 저장소로 보낸다.
 
-```
+```bash
 $ git pull
 ```
 
@@ -34,7 +34,7 @@ $ git pull
 
 ## 원격 저장소 활용 명령어
 
-```
+```bash
 $ git push <원격 저장소 이름> <브랜치 이름>
 ```
 
@@ -42,7 +42,7 @@ $ git push <원격 저장소 이름> <브랜치 이름>
 
 
 
-```
+```bash
 $ git pull <원격 저장소 이름> <브랜치 이름>
 ```
 
@@ -50,7 +50,7 @@ $ git pull <원격 저장소 이름> <브랜치 이름>
 
 
 
-```
+```bash
 $ git clone <원격 저장소 주소>
 ```
 
@@ -58,7 +58,7 @@ $ git clone <원격 저장소 주소>
 
 
 
-```
+```bash
 $ git remote -v
 ```
 
@@ -66,7 +66,7 @@ $ git remote -v
 
 
 
-```
+```bash
 $ git remote add <원격 저장소> <url>
 ```
 
