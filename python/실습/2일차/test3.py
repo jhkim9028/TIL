@@ -8,7 +8,6 @@ print(sum)
 
 
 k = 0
-for i in range(n):
-    i += 1
+for i in range(n+1):
     k += i
 print(k)
