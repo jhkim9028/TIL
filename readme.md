@@ -40,13 +40,12 @@ ___
 - [4일차](./python/4일차.md)
 - [실습](./python/실습)
 - [심화_1일차](./python/심화_1일차.md)
-- [심화_2일차_](./python/심화_2일차.md_)
+- [심화_2일차](./python/심화_2일차.md)
+- [심화_3일차](./python/심화_3일차.md)
 
 # codeup
 
 - [문제풀이](./codeup)
-
-
 
 # SWEA
 
@@ -56,3 +55,4 @@ ___
 
 - Typora
 - Github
+- MarkText
