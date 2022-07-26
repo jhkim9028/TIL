@@ -44,6 +44,12 @@ ___
 - [심화_3일차](./python/심화_3일차.md)
 - [심화_4일차](./python/심화_4일차.md)
 
+# Algorithm
+
+- [1일차]()
+
+- [2일차](./algorithm/알고리즘의 시간 복잡도.md)
+
 # codeup
 
 - [문제풀이](./codeup)
