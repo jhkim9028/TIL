@@ -50,6 +50,8 @@ ___
 
 - [2일차](./algorithm/알고리즘의 시간 복잡도.md)
 
+- [3일차](./algorithm/string.md)
+
 # codeup
 
 - [문제풀이](./codeup)
