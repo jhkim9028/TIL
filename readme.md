@@ -52,6 +52,8 @@ ___
 
 - [3일차](./algorithm/string.md)
 
+- [4일차](./algorithm/딕셔너리.md)
+
 # codeup
 
 - [문제풀이](./codeup)
