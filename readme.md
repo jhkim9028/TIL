@@ -54,6 +54,10 @@ ___
 
 - [4일차](./algorithm/딕셔너리.md)
 
+- [5일차](./algorithm/스택,큐.md)
+
+- [6일차](./algorithm/힙(Heap), 세트(set).md)
+
 # codeup
 
 - [문제풀이](./codeup)
