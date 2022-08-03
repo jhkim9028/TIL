@@ -58,6 +58,8 @@ ___
 
 - [6일차](./algorithm/힙(Heap), 세트(set).md)
 
+- [7일차](./algorithm/이차원 리스트.md)
+
 # codeup
 
 - [문제풀이](./codeup)
