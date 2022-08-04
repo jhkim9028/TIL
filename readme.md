@@ -48,7 +48,7 @@ ___
 
 - [1일차]()
 
-- [2일차](./algorithm/알고리즘의 시간 복잡도.md)
+- [2일차](./algorithm/알고리즘의_시간_복잡도.md)
 
 - [3일차](./algorithm/string.md)
 
@@ -56,9 +56,9 @@ ___
 
 - [5일차](./algorithm/스택,큐.md)
 
-- [6일차](./algorithm/힙(Heap), 세트(set).md)
+- [6일차](./algorithm/힙(Heap),세트(set).md)
 
-- [7일차](./algorithm/이차원 리스트.md)
+- [7일차](./algorithm/이차원리스트.md)
 
 # codeup
 
