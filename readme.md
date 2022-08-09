@@ -60,6 +60,12 @@ ___
 
 - [7일차](./algorithm/이차원리스트.md)
 
+- [8일차](./algorithm/.이차원리스트md)
+
+- [9일차](./algorithm/완전탐색.md)
+
+- [10일차](./algorithm/그래프.md)
+
 # codeup
 
 - [문제풀이](./codeup)
