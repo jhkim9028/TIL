@@ -19,7 +19,7 @@ e = input()
 e = list(e)
 for i in range(len(a)):
     if len(a) != len(a):
-        a.append(\)
+        a.append('\\')
     if len(b) != len(a):
         b.append(' ')
     if len(c) != len(a):
