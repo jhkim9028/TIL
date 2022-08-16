@@ -68,6 +68,10 @@ ___
 
 - [11일차](./algorithm/깊이우선탐색(DFS).md)
 
+# Database
+
+- [1일차](./DataBase/day_1.md)
+
 # codeup
 
 - [문제풀이](./codeup)
