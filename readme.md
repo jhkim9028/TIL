@@ -71,6 +71,7 @@ ___
 # Database
 
 - [1일차](./DataBase/day_1.md)
+- [2일차](./DataBase/day_2.md)
 
 # codeup
 
