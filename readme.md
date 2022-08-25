@@ -77,6 +77,7 @@ ___
 - [5일차](./DataBase/day_5.md)
 - [6일차](./DataBase/day_6.md)
 - [7일차](./DataBase/day_7.md)
+- [8일차](./DataBase/day_8.md)
 
 # codeup
 
