@@ -4,7 +4,7 @@ from pprint import pprint
 N = int(input())
 
 game = [list(map(int, input().split())) for _ in range(N)]
-pprint(game)
+
 
 new_game = [[],[],[]]
 ans = [[],[],[]]
