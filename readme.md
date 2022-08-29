@@ -79,6 +79,10 @@ ___
 - [7일차](./DataBase/day_7.md)
 - [8일차](./DataBase/day_8.md)
 
+## Web
+
+- [1일차](./Web/day_1.md)
+
 # codeup
 
 - [문제풀이](./codeup)
