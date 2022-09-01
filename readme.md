@@ -83,6 +83,8 @@ ___
 
 - [1일차](./Web/day_1.md)
 - [2일차](./Web/day_2.md)
+- [3일차](./Web/day_3.md)
+- [4일차](./Web/day_4.md)
 
 # codeup
 
