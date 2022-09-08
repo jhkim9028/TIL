@@ -1,0 +1,14 @@
+.star {
+    color: orange;
+    font-size: 15px;
+}
+
+.img {
+    position:relative;
+}
+
+.sale {
+    position:absolute;
+    right: 0.5rem;
+    top:0.5rem;
+}
