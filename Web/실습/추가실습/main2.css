@@ -1,0 +1,9 @@
+.blue-img {
+    position: relative;
+}
+
+.icons {
+    position:absolute;
+    left:16px;
+    top:6px;
+}
