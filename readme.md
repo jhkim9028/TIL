@@ -90,6 +90,7 @@ ___
 - [7일차](./Web/day_7.md)
 - [8일차](./Web/day_8.md)
 - [9일차](./Web/day_9.md)
+- [10일차](./Web/실습/day_10)
 
 # codeup
 
