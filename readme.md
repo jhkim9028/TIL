@@ -96,6 +96,8 @@ ___
 # JS
 
 - [1일차](./JS/day_1.md)
+- [2일차](./JS/day_2.md)
+- [3일차](./JS/day_3.md)
 
 # codeup
 
