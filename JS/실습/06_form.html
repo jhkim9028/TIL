@@ -10,11 +10,31 @@
   <form action="#" id="my-form">
     <input type="password" name="password" id="password">
     <input type="password" name="password_confirmation" id="password_confirmation">
+    <button id="check">확인</button>
   </form>
 
   <script>
     const passWord = document.querySelector('#password')
     const passWordConfirm = document.querySelector('#password_confirmation')
+    const check = document.querySelector('#check')
+
+    let code1
+    let code2
+    passWord.addEventListener('input', function(event){
+      code1 = event.target.value
+    })
+
+    passWordConfirm.addEventListener('input',function(event){
+      code2 = event.target.value
+    })
+
+    check.addEventListener('click',function(){
+      if (code1 !== code2){
+        alert('비밀번호가 일치하지 않습니다.')
+      } else if (code1 === code2) {
+        alert('비밀번호가 일치합니다.')
+      }
+    })
 
 
   </script>
