@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 생성기</title>
+    <style>
+        .container {
+            display:flex;
+            align-items: center;
+        }
+
+        .button {
+            margin-left: 3rem;
+        }
+
+        .button2 {
+            margin-left: 1rem;
+        }
+
+        .lotto-items {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .lotto-item {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .yellow {
+            background-color: #fff200;
+        }
+
+        .blue {
+            background-color: #4b7bec;
+        }
+
+        .red {
+            background-color: #ff4757;
+        }
+
+        .gray {
+            background-color: #778ca3;
+        }
+
+        .green {
+            background-color: #2ed573;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>로또 번호 추첨기</h1>
+        <div class="button">
+            <button>행운 번호!!</button>
+        </div>
+        <div id="remove" class="button2">
+            <button>지우기</button>
+        </div>
+        
+    </div>
+    <hr>
+    <div id="result"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+        const button = document.querySelector('button')
+        button.addEventListener('click', function(){
+            const lottoItems = document.createElement('div')
+            lottoItems.classList.add('lotto-items')
+
+            const numbers = _.sortBy(_.sampleSize(_.range(1,46),6))
+
+            let i = 0 
+            for (i = 0; i < 6; i++) {
+                const lottoItem = document.createElement('div')
+                lottoItem.classList.add('lotto-item')
+                lottoItem.innerText = numbers[i]
+                if (numbers[i] <= 10) {
+                    lottoItem.classList.add('yellow')
+                }   else if (numbers[i] <= 20) {
+                    lottoItem.classList.add('blue')
+                }   else if (numbers[i] <= 30) {
+                    lottoItem.classList.add('red')
+                }   else if (numbers[i] <= 40) {
+                    lottoItem.classList.add('gray')
+                }   else {
+                    lottoItem.classList.add('green')
+                }
+    
+                lottoItems.appendChild(lottoItem)
+            }           
+
+
+            const result = document.querySelector('#result')
+            result.appendChild(lottoItems)
+
+            const remove = document.querySelector('#remove')
+            remove.addEventListener('click',function(){
+                result.removeChild(lottoItems)
+            })
+        })
+    </script>
+</body>
+</html>
