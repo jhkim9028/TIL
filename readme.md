@@ -99,6 +99,10 @@ ___
 - [2일차](./JS/day_2.md)
 - [3일차](./JS/day_3.md)
 
+# Django
+
+- [1일차](./Django/day_1.md)
+
 # codeup
 
 - [문제풀이](./codeup)
