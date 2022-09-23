@@ -20,4 +20,5 @@ from sortition import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('lotto/', views.draw),
+    path('lotto/version2/', views.version2),
 ]

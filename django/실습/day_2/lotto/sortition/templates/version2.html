@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>로또 추첨 생성기</h1>
+    <!-- 로또 번호 5개 생성 -->
+    <hr>
+    {% for lo in lotto %}
+        {% for l in lo %}
+            <span class="font">{{ l }}</span>
+        {% endfor %}
+        <br>
+    {% endfor %}
+
+</body>
+</html>
