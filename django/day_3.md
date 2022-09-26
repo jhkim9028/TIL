@@ -4,8 +4,6 @@
 
 - 템플릿의 많은 부분이 중복되고, 일부분만 변경되는 상황에서 비슷한 URL과 템플릿을 계속해서 만들어야 할까?
 
-
-
 ## Variable routing
 
 - URL 주소를 변수로 사용하는 것을 의미
@@ -13,8 +11,6 @@
 - URL의 일부를 변수로 지정하여 view 함수의 인자로 넘길 수 있음
 
 - 즉, 변수 값에 따라 하나의 path()에 여러 페이지를 연결시킬 수 있음
-
-
 
 ## Variable routing 작성
 
@@ -54,7 +50,6 @@ def hello(request, name):
         'name': name,
     }
     return render(request, 'hello.html', context)
-
 ```
 
 ```html
@@ -65,8 +60,6 @@ def hello(request, name):
 {% endblock %}
 ```
 
-
-
 # Template ingeritance
 
 ## 템플릿 상속
@@ -74,8 +67,6 @@ def hello(request, name):
 - 템플릿 상속은 기본적으로 코드의 재사용성에 초점을 맞춤
 
 - 템플릿 상속을 사용하면 사이트의 모든 공통 요소를 포함하고, 하위 템플릿이 재정의(override) 할 수 있는 블록을 정의하는 기본 'skeleton' 템플릿을 만들 수 있음
-
-
 
 ## 템플릿 상속에 관련된 태그
 
@@ -92,8 +83,6 @@ def hello(request, name):
 - 즉, 하위 템플릿이 채울 수 있는 공간
 
 - 가독성을 높이기 위해 선택적으로 endblock 태그에 이름을 지정할 수 있음
-
-
 
 ## 템플릿 상속 예시
 
@@ -117,8 +106,6 @@ def hello(request, name):
 </html>
 ```
 
-
-
 - index 템플릿에서 base템플릿을 상속받음
 
 ```html
@@ -132,15 +119,11 @@ def hello(request, name):
 {% endblock content %}
 ```
 
-
-
 # Sending and Retrieving form data
 
 - '데이터를 보내고 가져오기'
 
 - HTML form element를 통해 사용자와 애플리케이션 간의 상호작용 이해하기
-
-
 
 ## Client & Server architecture
 
@@ -151,10 +134,6 @@ def hello(request, name):
 - 클라이언트 측에서 HTML form은 HTTP요청을 서버에 보내는 가장 편리한 방법
 
 - 이를 통해 사용자는 HTTP요청에서 전달한 정보를 제공할 수 있음
-
-
-
-
 
 # Sending form data(client)
 
@@ -171,8 +150,6 @@ def hello(request, name):
   - action
   
   - method
-
-
 
 ## HTML form's attributes
 
@@ -192,8 +169,6 @@ def hello(request, name):
    
    - HTML form 데이터는 오직 2가지 방법으로만 전송할 수 있는데 바로 GET 방식과 POST 방식
 
-
-
 ## HTML <input> element
 
 - 사용자로부터 데이터를 입력 받기 위해 사용
@@ -208,8 +183,6 @@ def hello(request, name):
   
   - name
 
-
-
 ## HTML input's attribute
 
 - name
@@ -221,8 +194,6 @@ def hello(request, name):
     - GET방식에서는 URL 형식으로 데이터를 전달
     
     - '?key=value&key=value/'
-
-
 
 ## HTTP request methods
 
@@ -244,8 +215,6 @@ def hello(request, name):
   
   - GET이 아닌 다른 method는 추후 다시 알아볼 예정
 
-
-
 ## GET
 
 - 서버로부터 정보를 조회하는 데 사용
@@ -258,17 +227,11 @@ def hello(request, name):
   
   - 데이터는 URL에 포함되어 서버로 보내짐
 
-
-
 ## GET메서드 작성
 
 - GET과 get 모두 대소문자 관계없이 동일하게 동작하지만 명시적 표현을 위해 대문자 사용을 권장
 
 - 데이터를 입력 후 submit버튼을 누르고 URL의 변화를 확인한다.
-
-
-
-
 
 ## Query String Parameters
 
@@ -282,10 +245,6 @@ def hello(request, name):
 
 - 파라미터가 여러 개일 경우 '&'를 붙여 여러 개의 파라미터를 넘길 수 있음
 
-
-
-
-
 # Retrieving the date(Server)
 
 - '데이터 가져오기'
@@ -294,15 +253,11 @@ def hello(request, name):
 
 - 이러한 목록에 접근하는 방법은 사용하는 특정 프레임워크에 따라 다름
 
-
-
 ## action작성
 
 - throw 페이지에서 form의 action부분을 마저 작성하고 데이터를 보낸다.
 
 - 실습 편의를 위해 index 페이지에 throw 하이퍼 링크를 작성한다.
-
-
 
 ## 데이터 가져오기
 
@@ -311,8 +266,6 @@ def hello(request, name):
 - 데이터는 URL에 포함되어 서버로 보내짐
 
 - '모든 요청 데이터는 view함수의 첫번째 인자 request에 들어있다.'
-
-
 
 ## Request and Response objects
 
@@ -324,15 +277,11 @@ def hello(request, name):
   
   3. 마지막으로 view함수는 HttpResponse object를 반환
 
-
-
 # Django URLs
 
 - 'Dispatcher(운행 관리원)로서의 URL 이해하기'
 
 - 웹 어플리케이션은 URL을 통한 클라이언트의 요청에서부터 시작함
-
-
 
 ## Trailing Slaches
 
@@ -349,5 +298,11 @@ def hello(request, name):
   - 그래서 Django는 URL을 정규화하여 검색 엔진 로봇이 혼동하지 않게 해야 함
 
 
+
+
+
+## 실습
+
+[실습](./실습/day_3)
 
 
