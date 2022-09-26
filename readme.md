@@ -12,8 +12,6 @@ ___
 
 - [마크다운 실습](./markdown/Markdown_실습.md)
 
-
-
 ## CLI
 
 - [CLI 기초](./CLI/CLI.md)
@@ -36,13 +34,9 @@ ___
 
 - [Branch 기초](./git_branch/Branch.md)
 
-
-
 ## 특강
 
 - [특강](./special_lecture/0708_lecture)
-
-
 
 ## Python
 
@@ -55,8 +49,6 @@ ___
 - [심화_2일차](./python/심화_2일차.md)
 - [심화_3일차](./python/심화_3일차.md)
 - [심화_4일차](./python/심화_4일차.md)
-
-
 
 ## Algorithm
 
@@ -82,8 +74,6 @@ ___
 
 - [11일차](./algorithm/깊이우선탐색(DFS).md)
 
-
-
 ## Database
 
 - [1일차](./DataBase/day_1.md)
@@ -94,8 +84,6 @@ ___
 - [6일차](./DataBase/day_6.md)
 - [7일차](./DataBase/day_7.md)
 - [8일차](./DataBase/day_8.md)
-
-
 
 # Web
 
@@ -111,46 +99,34 @@ ___
 - [10일차](./Web/실습/day_10)
 - [11일차](./Web/실습/day_11)
 
-
-
 # JS
 
 - [1일차](./JS/day_1.md)
 - [2일차](./JS/day_2.md)
 - [3일차](./JS/day_3.md)
 
-
-
 # Django
 
 - [1일차](./Django/day_1.md)
-
-
+- [2일차](./Django/day_2.md)
+- [3일차](./Django/day_3.md)
 
 # codeup
 
 - [문제풀이](./codeup)
-
-
 
 # SWEA
 
 - [D1](./swea/D1)
 - [D2](./swea/D2)
 
-
-
 # Baekjoon
 
 - [문제풀이](./Baekjoon)
 
-
-
 # SQLD
 
 - [제 1장 데이터모델링의 이해](./SQLD/제1장 데이터모델링의 이해.md)
-
-
 
 ## 학습 참고 사이트
 
