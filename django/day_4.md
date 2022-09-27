@@ -30,15 +30,11 @@ urlpatterns = [
 ]
 ```
 
-
-
 ## Including other URLconfs
 
 - 메인 페이지 주소가
   
   http://~ :8000/index/ -> http:// ~ :8000/articles/index/ 로 바뀜
-
-
 
 ## Include()
 
@@ -46,13 +42,9 @@ urlpatterns = [
 
 - 함수 include()를 만나게 되면 URL의 그 시점까지 일치하는 부분을 잘라내고, 남은 문자열 부분을 후속처리를 위해 include된 URLconf로 전달
 
-
-
 # Template namespace
 
 - pages app의 index url(http://localhost:8000/pages/index/)로 직접 이동해도 articles app의 index 페이지가 출력됨
-
-
 
 ## 개요
 
@@ -71,15 +63,11 @@ TEMPLATES = [
 ]
 ```
 
-
-
 ## 디렉토리 생성을 통해 물리적인 이름공간 구분
 
 - Django templates의 기본 경로에 app과 같은 이름의 폴더를 생성해 폴더 구조를 app_name/templates/app_name/형태로 변경
 
 - Django templates의 기본 경로 자체를 변경할 수 없기 떄문에 물리적으로 이름 공간을 만드는 것
-
-
 
 ## 템플릿 경로 변경
 
@@ -95,4 +83,6 @@ return render(request, 'articles/index.html')
 return render(request, 'pages/index.html')
 ```
 
+## 실습
 
+[ORM 실습](./실습/day_4/day_4.md)
