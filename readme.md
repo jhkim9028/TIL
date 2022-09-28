@@ -110,6 +110,8 @@ ___
 - [1일차](./Django/day_1.md)
 - [2일차](./Django/day_2.md)
 - [3일차](./Django/day_3.md)
+- [4일차](./Django/day_4.md)
+- [5일차](./Django/실습/day_5)
 
 # codeup
 
