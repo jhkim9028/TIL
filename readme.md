@@ -12,25 +12,17 @@ ___
 
 - [마크다운 실습](./markdown/Markdown_실습.md)
 
-
-
 ## CLI
 
 - [CLI 기초](./CLI/CLI.md)
-  
-   
 
 ## Git
 
 - [Git 기초](./git/git.md)
-  
-   
 
 ## Github
 
 - [Github 기초](./github/github.md)
-
-
 
 ## Branch
 
@@ -114,6 +106,8 @@ ___
 - [3일차](./Django/day_3.md)
 - [4일차](./Django/day_4.md)
 - [5일차](./Django/실습/day_5)
+- [6일차](./Django/실습/day_6)
+- [프로젝트1](./django/실습/pjt_1)
 
 # codeup
 
@@ -132,8 +126,6 @@ ___
 
 - [제 1장 데이터모델링의 이해](./SQLD/제1장 데이터모델링의 이해.md)
 - [제 2장 데이터 모델과 성능](./SQLD/제2장 데이터모델과 성능.md)
-
-
 
 ## 학습 참고 사이트
 
