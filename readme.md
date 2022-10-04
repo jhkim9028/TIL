@@ -108,6 +108,7 @@ ___
 - [5일차](./Django/실습/day_5)
 - [6일차](./Django/실습/day_6)
 - [프로젝트1](./django/실습/pjt_1)
+- [7일차](./Django/day_7.md)
 
 # codeup
 
