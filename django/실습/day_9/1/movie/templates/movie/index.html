@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white-50" aria-current="page" href="{% url 'movie:index' %}">목록</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="{% url 'movie:new' %}">추가</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">pk</th>
+          <th scope="col">영화제목</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for movie in movies %}
+          <tr>
+            <th scope="row">{{ movie.id }}</th>
+            <td>
+              <a href="{% url 'movie:detail' movie.pk %}">{{ movie.title }}</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
