@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="card" style="width: 100%;">
+      <div class="card-body">
+        <h3 class="card-title my-3">{{review.title}}</h3>
+        <h6 class="card-subtitle mb-2 text-muted my-2">{{review.movie_name}}
+          <span>{{ review.grade }}</span>
+        </h6>
+        <p class="card-text my-3">{{review.content}}</p>
+        <div class="d-flex justify-content-end">
+          <a href="{% url 'review:update' review.pk %}" class="card-link btn btn-outline-success">수정</a>
+          <a href="{% url 'review:delete' review.pk %}" class="card-link btn btn-outline-danger">삭제</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

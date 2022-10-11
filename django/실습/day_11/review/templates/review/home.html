@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h2>검색어를 입력하세요</h2>
+    <form action="{% url 'review:search' %}" method="GET">
+      <input type="text" name="search">
+    </form>
+  </div>
+{% endblock %}
