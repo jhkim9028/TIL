@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% load django_bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <div class="container">
+
+    <form action="" method="POST">
+      {% csrf_token %}
+      {% bootstrap_form review_form %}
+      <div class="d-flex justify-content-end">
+        <input type="submit" value="수정" class="btn btn-outline-success">
+      </div>
+    </form>
+  </div>
+
+{% endblock %}

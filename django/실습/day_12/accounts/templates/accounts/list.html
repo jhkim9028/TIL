@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <table class="table table-striped">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">PK</th>
+          <th scope="col">username</th>
+          <th scope="col">email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for list in lists %}
+          <tr>
+            <th scope="row">{{list.pk}}</th>
+            <td>
+              <a href="{% url 'accounts:detail' list.pk %}">{{list.username}}</a>
+            </td>
+            <td>{{ list.email }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endblock %}
