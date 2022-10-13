@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <div class="container">
+    <h1>프로필 업데이트</h1>
+    <form action="{% url 'accounts:update' %}" method="POST">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      {% bootstrap_button content="저장" button_type="submit" button_class="btn-outline-primary col-12" %}
+    </form>
+  </div>
+{% endblock %}
