@@ -114,6 +114,7 @@ ___
 - [10일차](./Django/실습/pjt_2)
 - [11일차](./Django/day_11.md)
 - [12일차](./Django/실습/day_12)
+- [13일차](./Django/실습/day_13)
 
 # codeup
 
