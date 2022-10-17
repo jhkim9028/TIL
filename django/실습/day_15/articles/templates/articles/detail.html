@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h1 class="mb-3">{{article.title}}</h1>
+    {% if article.image %}
+      <img src="{{ article.image.url }}" alt="{{ article.image }}" width="800" height="600">
+    {% endif %}
+    <p class="mt-5 fs-3">{{ article.content }}</p>
+    <div class="d-flex justify-content-end">
+      <a href="{% url 'articles:update' article.pk %}" class="me-1 btn btn-outline-success">수정</a>
+      <a href="{% url 'articles:delete' article.pk %}" class="ms-1 btn btn-outline-danger">삭제</a>
+    </div>
+  </div>
+{% endblock %}
