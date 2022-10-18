@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container mt-5">
+    <div class="row">
+      {% for article in articles %}
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            {% if article.thumbnail %}
+              <img src="{{ article.thumbnail.url }}" class="card-img-top" alt="">
+            {% else %}
+              <img src="https://dummyimage.com/1200x960/000000/c4c4c4" class="card-img-top" style="width:286px; height: 286px;" alt="">
+            {% endif %}
+            <div class=" card-body">
+              <h5 class="card-title">{{ article.title }}</h5>
+              <p class="card-text">{{ article.content }}</p>
+              <a href="{% url 'articles:detail' article.pk %}" class="btn btn-primary">더 보기</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block content %}
+  <div class="container mt-3">
+    <h1>글 쓰기</h1>
+    <form action="{% url 'articles:create' %}" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      {% bootstrap_button button_type="submit" content="작성" button_class="btn btn-outline-primary col-12" %}
+    </form>
+  </div>
+{% endblock %}
