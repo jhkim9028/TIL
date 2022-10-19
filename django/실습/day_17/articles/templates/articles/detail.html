@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block content %}
+  <div class="container">
+    <h1 class="my-4">{{ article.title }}</h1>
+    <p>{{ article.user.username }}</p>
+    <p class="my-4">{{ article.content }}</p>
+    <h4 class="my-3">댓글</h4>
+    {% if request.user.is_authenticated %}
+      <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form comment_form layout='inline' form_class="my-1"%}
+        {% bootstrap_button button_type="submit" content="OK" button_class="btn btn-primary"%}
+      </form>
+    {% endif %}
+    <hr>
+    {% for comment in comments %}
+      <p>{{ comment.user.username }}
+        |
+        {{ comment.content }}</p>
+      <hr>
+      {% empty %}
+      <p>댓글이 없어요ㅠㅠ</p>
+    {% endfor %}
+    <div class="d-flex justify-content-end">
+      <a href="{% url 'articles:index' %}" class="btn btn-outline-primary">
+        목록으로
+      </a>
+    </div>
+  </div>
+{% endblock %}

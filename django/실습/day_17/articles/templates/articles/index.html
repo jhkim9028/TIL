@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block content %}
+  <div class="container">
+    <h1 class="my-4">게시글 목록</h1>
+    {% if request.user.is_authenticated %}
+    <a href="{% url 'articles:create' %}" class="btn btn-outline-success my-4">글쓰기</a>
+    {% endif %}
+    <div class="row">
+        {% for article in articles %}
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                {% comment %} <img src="..." class="card-img-top" alt="..."> {% endcomment %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ article.title }}</h5>
+                    <p><a href="{% url 'accounts:detail' article.user.pk %}">{{ article.user.username }}</a></p>
+                    <p class="card-text">{{ article.content }}</p>
+                    <a href="{% url 'articles:detail' article.pk %}" class="btn btn-primary">더 보기</a>
+                </div>
+            </div>
+        </div>
+            {% endfor %}
+    </div>
+  </div>
+{% endblock %}
