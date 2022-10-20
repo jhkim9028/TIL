@@ -119,6 +119,7 @@ ___
 - [15일차](./django/실습/day_15)
 - [16일차](./django/실습/day_16)
 - [17일차](./django/실습/day_17)
+- [18일차](./django/실습/day_18)
 
 # codeup
 
