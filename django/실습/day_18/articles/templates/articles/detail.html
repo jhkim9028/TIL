@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block content %}
+  <div class="container">
+    <h1>{{ article.title }}</h1>
+    <h3>
+      <a href="{% url 'accounts:detail' user.pk %}">{{ article.user.username }}</a>
+    </h3>
+    <p>{{ article.content }}</p>
+    <img src="{{ article.image.url }}" alt="{{ article.image }}" width="400" height="300">
+    {% if request.user == user %}
+      <div class="d-flex justify-content-end my-3">
+        <a href="{% url 'articles:update' article.pk %}" class="btn btn-outline-success mx-1">수정</a>
+        <a href="{% url 'articles:delete' article.pk %}" class="btn btn-outline-danger mx-1">삭제</a>
+      </div>
+    {% endif %}
+    <h4>댓글</h4>
+    <hr>
+    {% if request.user.is_authenticated %}
+      <form action="{% url 'articles:create_comment' article.pk %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form comment_form layout='inline'%}
+        {% bootstrap_button button_type="submit" content="OK" button_class="btn btn-outline-primary" %}
+      </form>
+    {% endif %}
+    {% for comment in comments %}
+      <p>{{ comment.user.username  }}|{{ comment.content }}</p>
+      <hr>
+      {% empty %}
+      <p>댓글이 없어요ㅠㅠ</p>
+    {% endfor %}
+  </div>
+{% endblock %}
