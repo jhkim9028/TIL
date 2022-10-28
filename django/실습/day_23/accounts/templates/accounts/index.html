@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="card" style="width: 20rem;">
+  <div class="card-header">
+    <div class='fs-3 fw-bold'>유저 목록</div>
+  </div>
+  <ul class="list-group list-group-flush">
+    {% for user in users %}
+    <a href="{% url 'accounts:detail' user.pk %}" style="text-decoration:none;">
+      <li class="list-group-item"> 
+        <div>
+          {{ user.username }} 
+        </div>
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+
+</div>
+
+<p>
+  
+</p>
+
+{% endblock body %}
