@@ -1,23 +1,27 @@
-# 9613
+# 최대공약수의 합
 
-# 각 쌍마다 최대공약수를 구해서 합을 구한다
-
-def gcd(a,b):
-    if b == 0:
-        return a
-    else:
-        return gcd(b, a%b)
-
+# 유클리드 호제법
+def gcd(a, b):
+    while b > 0:
+        a, b = b, a % b
+    return a
 
 T = int(input())
 
 for t in range(T):
-    num = list(map(int, input().split()))
+    # 숫자 리스트
+    numbers = list(map(int, input().split()))
+    
+    # 숫자 개수
+    num = numbers.pop(0)
+    
+    # 답
     ans = 0
-    for i in range(1, len(num)):
-        for j in range(1, len(num)):
-            if i < j:
-                ans += gcd(num[i],num[j])
-            else:
-                pass
+    
+    for i in range(num):
+        j = i
+        while j < num - 1:
+            j += 1
+            ans += gcd(numbers[i], numbers[j])
+
     print(ans)
