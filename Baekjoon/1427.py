@@ -1,15 +1,25 @@
 import sys
 input = sys.stdin.readline
 
-num = input()
-arr = [0] * 10
-for i in range(len(num)-1):
-    arr[num[i]] += 1
+number = input()
 
+stack = []
+arr = []
 
-ans = []
-for j in range(10):
-    if arr[j] > 0:
-        ans.append(f'{j}'*arr[j])
+for i in range(len(number)):
+    if not stack:
+        stack.append(number[i])
+    else:
+        if number[i] <= stack[-1]:
+            stack.append(number[i])
+            continue
+        else:
+            while True:
+                if  not stack or stack[-1] > number[i]:
+                    stack.append(number[i])
+                    while arr:
+                        stack.append(arr.pop())
+                    break
+                arr.append(stack.pop())
 
-print(ans)
+print(''.join(stack))
